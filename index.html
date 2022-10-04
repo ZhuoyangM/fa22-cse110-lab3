@@ -3,10 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>First Team Meeting</title>
+    <link rel="icon" type="image/png" href="images/unicorn.png">
 </head>
 <body>
-    Hello World!
+    <header>
+        <h1>First Team Meeting</h1>
+        <b>Time: 10/03/2022 | Location: WLH 2001</b>
+        <hr>
+    </header>
+
+    <main>
+        <div class="Attendance List">
+            <h2>Attendance List</h2> 
+            <ul>
+                <li>Oliver Bolton</li>
+                <li>Dwayne Hastings</li>
+                <li>Pamela Higgins</li>
+                <li>Marlene Perez</li>
+                <li>Wilson Irwin</li>
+                <li>Angelica Franklin</li>
+
+            </ul>
+        </div>
+        <hr>
+
+        <div class="Agenda">
+            <h2>Agenda</h2>
+            <ol>
+               <li>Every team member takes turns to do a <span>self-introduction;</span></li>
+               <li>Brainstorm to come up with an awesome group name;</li>
+               <li>Select a team leader;</li>
+               <li>Set up team rules;</li>
+               <li>Assign tasks for each team member;</li>
+               <li>Wrap up everything.</li>
+            </ol>
+        </div>
+        <hr>
+
+        <div class="Comments">
+            <h2>Comments</h2>
+            <p>The meeting last for an hour, and the team finished most tasks listed in the agenda.
+                For team name, the team adopted Oliver's idea that proposed the name <i>Kingmakers.</i>
+                After a brief self-introduction session, the team selected Wilson as the team leader through anonymous vote.
+            </p>
+            <p>
+                One thing to notice is that some team members disagreed on certain rules that others proposed. Thus, in next meeting the team should finish setting up team rules first <em>before</em> moving on to the main contents of next meeting.
+            </p>
+        </div>
+        <hr>
+        <div class="Team Photo">
+            <h2>Team Photo</h2>
+            <img src="images/team.png" width="300" height="200">
+
+        </div>
+        <hr>
+        <div class="Recordings">
+            <h2>Recordings</h2>
+            <details>
+                <summary><strong>Video</strong></summary>
+                <video width="320" height="240" controls>
+                    <source src="multimedia/fakeVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </details>
+            <br>
+            <details>
+                <summary><strong>Audio</strong></summary>>
+                <audio controls>
+                    <source src="multimedia/fakeAudio.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+            </details>
+
+        </div>
+        <hr>
+        <div class="Meeting Feedback">
+            <h2>Meeting Feedback</h2>
+            <form action="/action_page.php" id="feedback">
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="fname"><br><br>
+                    
+                    <label for="gender">Choose your gender:</label>
+                    <select id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    
+                    <label for="preferredLanguage">Preferred Language</label>
+                    <input list="preferredLanguages" name="preferredLanguage" id="preferredLanguage">
+                    <datalist id="preferredLanguages">
+                        <option value="English">
+                        <option value="Spanish">
+                        <option value="Chinese">
+                        <option value="Japanese">
+                    </datalist>
+
+                    <br><br>
+
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50">Please provide your feedback~</textarea><br><br>
+                    
+                    <button type="submit" value="Submit" form="feedback">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <br>
+    <footer>
+        For more info about this meeting: 
+        <a href="https://ucsd.edu/">Visit ucsd.edu!</a>
+    </footer>
     
 </body>
 </html>
