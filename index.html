@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Team Meeting</title>
     <link rel="icon" type="image/png" href="images/unicorn.png">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>First Team Meeting</h1>
         <h3>Recorder: Wilson Irwin</h3>
         <h3>Time: 10/03/2022 | Location: WLH 2001</h3>
@@ -16,9 +17,9 @@
 
     <main>
         <section>
-            <div class="Attendance List">
+            <div class="Attendance">
                 <h2>Attendance List</h2> 
-                <ul>
+                <ul class="names">
                     <li>Oliver Bolton</li>
                     <li>Dwayne Hastings</li>
                     <li>Pamela Higgins</li>
@@ -35,7 +36,7 @@
             <div class="Agenda">
                 <h2>Agenda</h2>
                 <ol>
-                <li>Every team member takes turns to do a <span>self-introduction;</span></li>
+                <li>Every team member takes turns to do a <span class="exp2">self-introduction</span>;</li>
                 <li>Brainstorm to come up with an awesome group name;</li>
                 <li>Select a team leader;</li>
                 <li>Set up team rules;</li>
@@ -49,9 +50,9 @@
         <section>
             <div class="Comments">
                 <h2>Comments</h2>
-                <p>The meeting last for an hour, and the team finished most tasks listed in the agenda.
+                <p>The meeting last for <span class="exp1">an hour</span>, and the team finished most tasks listed in the agenda.
                     For team name, the team adopted <b>Oliver's</b> idea that proposed the name <i>Kingmakers.</i>
-                    After a brief self-introduction session, the team selected <strong>Wilson</strong> as the team leader through anonymous vote.
+                    After a brief self-introduction session, the team selected <span class="exp3"><strong>Wilson</strong></span> as the team leader through anonymous vote.
                 </p>
                 <p>
                     One thing to notice is that some team members disagreed on certain rules that others proposed. 
@@ -63,9 +64,9 @@
 
 
         <section>
-            <div class="Team Photo">
+            <div class="Team-Photo">
                 <h2>Team Photo</h2>
-                <img src="images/team.png" alt="team photo" width="300" height="200">
+                <img class="photo" src="images/team.png" alt="team photo" width="300" height="200">
 
             </div>
             <hr>
@@ -96,7 +97,33 @@
         </section>
 
         <section>
-            <div class="Meeting Feedback">
+            <h2>Team Values</h2>
+            
+            <div class="flex-container">
+                <div class="communication">Communication</div>
+                <div class="respect">Respect</div>
+                <div class="responsible">Responsible</div>
+            </div>
+
+        </section>
+
+        <hr>
+        
+        <section>
+            <h2>Team Themes</h2>
+            <div class="grid-container">
+                <div class="grid-item">Cats</div>
+                <div class="grid-item">Dogs</div>
+                <div class="grid-item">Robots</div>
+                <div class="grid-item">Orange</div>
+
+            </div>
+
+        </section>
+        <hr>
+
+        <section>
+            <div class="Meeting-Feedback">
                 <h2>Meeting Feedback</h2>
                 <form action="/action_page.php" id="feedback">
                     <fieldset>
@@ -129,7 +156,7 @@
 
                         <label for="comments">Feedback:</label><br>
                         <textarea id="comments" rows="4" cols="50">Please provide your feedback~</textarea><br><br>
-                        <button type="submit" value="Submit" form="feedback">Submit</button>
+                        <button class="button" type="submit" value="Submit" form="feedback">Submit</button>
                     </fieldset>
                 </form>
             </div>
@@ -137,9 +164,9 @@
 
     </main>
     <br>
-    <footer>
+    <footer class="footer">
         For more info about this meeting:
-        <nav>
+        <nav class="links">
             <a href="https://ucsd.edu/">UCSD</a> |
             <a href="https://warren.ucsd.edu/">Warren College</a> |
             <a href="https://conference.ucsd.edu/">Conference</a>
