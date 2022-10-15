@@ -1,3 +1,18 @@
+@font-face {
+    font-family: myFont ;
+    src: url(images/FuzzyBubbles-Bold.ttf);
+}
+
+@font-face {
+    font-family:secondFont;
+    src: url(images/FuzzyBubbles-Regular.ttf);
+}
+
+*{
+    color:#8B008B;
+    font-family: myFont;
+}
+
 h1 {
     color:blue;
     font-size:45px;
@@ -55,6 +70,10 @@ p {
     text-align: left;
 }
 
+p, .Attendance, .Agenda{
+    text-decoration: underline;
+}
+
 span.exp1{
     display: inline-block;
     background-color: #006100;
@@ -65,13 +84,12 @@ span.exp1{
 span.exp2{
     display: inline;
     background-color:blueviolet;
-
 }
 
 span.exp3{
     display: block;
     background-color:blue;
-    max-width: 50px;
+    max-width: 65px;
 }
 
 .photo{
@@ -131,23 +149,6 @@ button:active{
     text-align: center;
 }
 
-@font-face {
-    font-family: myFont ;
-    src: url(images/FuzzyBubbles-Bold.ttf);
-}
-
-@font-face {
-    font-family:secondFont;
-    src: url(images/FuzzyBubbles-Regular.ttf);
-}
-
-h1{
-    font-family: myFont;
-}
-
-h3{
-    font-family:secondFont;
-}
 
 /*Subtiles are blueviolet when the width of screen is less than or equal to 1000px */
 @media (max-width: 1000px){
@@ -156,7 +157,7 @@ h3{
     }
 }
 
-.Meeting-Feedback{
+#info{
     display:block;
     background-color: lightgrey;
     height:60vh;
@@ -168,4 +169,24 @@ h3{
 
 .footer{
     position: sticky;
+}
+
+a[target="main"]{
+    background-color: hsl(297,80%,50%);
+}
+
+div > h2{
+    text-decoration: underline;
+}
+
+section h2{
+    text-decoration: underline;
+}
+
+h2 ~ ul{
+    background-color: aqua;
+}
+
+h2+ol{
+    background-color: aqua;
 }
