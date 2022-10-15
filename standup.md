@@ -12,3 +12,7 @@
 
 ### What obstacles are impending my progress?
 - I can't contact xxx. Does anyone has his number?
+
+
+## Name: Jack
+Similar to above.
