@@ -1,0 +1,171 @@
+h1 {
+    color:blue;
+    font-size:45px;
+}
+
+h2 {
+    color:#0000ff;
+    font-size: 28px;
+}
+
+h3{
+    color:rgb(0,0,139);
+    font-size:18px
+}
+
+body{
+    background-color: hsl(200,20%,50%);
+    font-size:20px;
+}
+
+  
+.Agenda{
+    background-color: lightgrey;
+    width: 4in;
+    border: 5px solid #8B008B;
+    border-radius: 10px;
+    padding: 10px,10px,10px,10px;
+    margin: 10px, 10px, 10px, 10px;
+    position: relative;
+    top: 10px;
+    font-size: 1.2em;
+}
+
+.Attendance{
+    background-color: lightgrey;
+    width: 4in;
+    border-width: 5px;
+    border-style: solid;
+    border-color:#8B008B;
+    border-radius: 10px;
+    padding-top:5px;
+    padding-bottom:7px;
+    padding-left:7px;
+    padding-right:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+p {
+    color: black;
+    text-decoration: underline;
+    text-align: left;
+}
+
+span.exp1{
+    display: inline-block;
+    background-color: #006100;
+    min-width: 55px;
+
+}
+
+span.exp2{
+    display: inline;
+    background-color:blueviolet;
+
+}
+
+span.exp3{
+    display: block;
+    background-color:blue;
+    max-width: 50px;
+}
+
+.photo{
+    height: 200px;
+    width: 50vw;
+    position: static;
+}
+
+button:hover{
+    color:#FF00FF;
+}
+
+button:active{
+    color:#0000FF;
+}
+
+.flex-container{
+    display:flex;
+    background-color: #2196F3;
+    min-width: 700px;
+    flex-direction:row-reverse;
+}
+
+.communication{
+    flex-grow:1;
+    flex-shrink:1;
+    border:3px solid rgba(0, 0, 0, 0.2);
+}
+
+.respect{
+    flex-grow:3;
+    flex-shrink:3;
+    border:3px solid rgba(0, 0, 0, 0.2)
+}
+
+.responsible{
+    flex-grow:1;
+    flex-shrink:1;
+    border:3px solid rgba(0, 0, 0, 0.2)
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 50px;
+    background-color: #2196F3;
+    padding: 10px;
+    justify-content: stretch;
+    grid-gap:5px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 1pc;
+    text-align: center;
+}
+
+@font-face {
+    font-family: myFont ;
+    src: url(images/FuzzyBubbles-Bold.ttf);
+}
+
+@font-face {
+    font-family:secondFont;
+    src: url(images/FuzzyBubbles-Regular.ttf);
+}
+
+h1{
+    font-family: myFont;
+}
+
+h3{
+    font-family:secondFont;
+}
+
+/*Subtiles are blueviolet when the width of screen is less than or equal to 1000px */
+@media (max-width: 1000px){
+    h2 {
+        color:blueviolet;
+    }
+}
+
+.Meeting-Feedback{
+    display:block;
+    background-color: lightgrey;
+    height:60vh;
+    border: 5px solid #8B008B;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px 15px 15px 15px;
+}
+
+.footer{
+    position: sticky;
+}

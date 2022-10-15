@@ -1,9 +1,7 @@
 # Lab 2
 
-[Meeting Minutes Page](https://zhuoyangm.github.io/Lab2/)
+Meeting Minutes with styles:
+
+[Meeting Minutes Page](https://zhuoyangm.github.io/fa22-cse110-lab3/)
 
 
-hhhhh
-
-
-This is a test message
